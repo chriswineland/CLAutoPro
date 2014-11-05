@@ -12,6 +12,7 @@ import UIKit
 class SearchesMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var contentTableView: UITableView?
+    var tableViewData = SearchesMainTableViewData()
     
      required init(coder aDecoder: NSCoder)
     {
@@ -26,9 +27,13 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         self.navigationItem.title = "Search"
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return tableViewData.numberOfSectionsInTableView()
+    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return tableViewData.numberOfRowsInTableSection(section)
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

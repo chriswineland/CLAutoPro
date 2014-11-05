@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FB56EB11A0ACD71004CC08B /* SearchesMainTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */; };
+		0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB21A0AD8A6004CC08B /* Search.swift */; };
 		16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4A1A09D4C700284661 /* AppDelegate.swift */; };
 		16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */; };
 		16D3DF501A09D4C700284661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4F1A09D4C700284661 /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesMainTableViewData.swift; sourceTree = "<group>"; };
+		0FB56EB21A0AD8A6004CC08B /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		16D3DF451A09D4C700284661 /* CLAutoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLAutoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D3DF491A09D4C700284661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16D3DF4A1A09D4C700284661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 		16D3DF721A09E03500284661 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */,
+				0FB56EB21A0AD8A6004CC08B /* Search.swift */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 				16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */,
 				16D3DF7A1A09E4D800284661 /* SearchesMainViewController.swift in Sources */,
 				16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */,
+				0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */,
 				16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */,
+				0FB56EB11A0ACD71004CC08B /* SearchesMainTableViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +463,7 @@
 				16D3DF691A09D4C700284661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16D3DF6A1A09D4C700284661 /* Build configuration list for PBXNativeTarget "CLAutoProTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +472,7 @@
 				16D3DF6C1A09D4C700284661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

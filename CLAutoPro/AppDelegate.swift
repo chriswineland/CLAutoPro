@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
@@ -25,17 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let searchesNavigationController: UINavigationController = UINavigationController()
         searchesNavigationController.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 1)
-        let searchesMainView = UIViewController(nibName: "SearchesMainView", bundle: nil)
+        let searchesMainView = SearchesMainViewController(nibName: "SearchesMainView", bundle: nil)
         searchesNavigationController.viewControllers = [searchesMainView]
         
         let autoInformNavigationController: UINavigationController = UINavigationController()
         autoInformNavigationController.tabBarItem = UITabBarItem(title: "Inform", image: nil, tag: 2)
-        let autoInformMainView = UIViewController(nibName: "AutoInformMainView", bundle: nil)
+        let autoInformMainView = AutoInformMainViewController(nibName: "AutoInformMainView", bundle: nil)
         autoInformNavigationController.viewControllers = [autoInformMainView]
         
         let settingsNavigationController: UINavigationController = UINavigationController()
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 3)
-        let settingsMainView = UIViewController(nibName: "SettingsMainView", bundle: nil)
+        let settingsMainView = SettingsMainViewController(nibName: "SettingsMainView", bundle: nil)
         settingsNavigationController.viewControllers = [settingsMainView]
         
         let tabBarControllerArray = [searchesNavigationController, autoInformNavigationController, settingsNavigationController]

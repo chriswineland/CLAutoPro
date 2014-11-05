@@ -6,14 +6,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchesMainViewController" customModule="CLAutoPro" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="sdj-xB-siL"/>
+                <outlet property="contentTableView" destination="EVk-cR-ftf" id="Z42-ot-8fv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="owq-6N-LYz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="EVk-cR-ftf">
+                    <rect key="frame" x="8" y="14" width="584" height="578"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Z8J-Wz-NVT"/>
+                        <outlet property="delegate" destination="-1" id="xxz-6c-Eyz"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.89954377691493992" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EVk-cR-ftf" secondAttribute="bottom" id="0xZ-XM-EG5"/>
+                <constraint firstAttribute="trailing" secondItem="EVk-cR-ftf" secondAttribute="trailing" id="6y9-mS-T5c"/>
+                <constraint firstItem="EVk-cR-ftf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8cZ-tq-g0J"/>
+                <constraint firstItem="EVk-cR-ftf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="evw-aH-pTX"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="155"/>
         </view>
     </objects>
 </document>

@@ -10,10 +10,15 @@
 		16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4A1A09D4C700284661 /* AppDelegate.swift */; };
 		16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */; };
 		16D3DF501A09D4C700284661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4F1A09D4C700284661 /* ViewController.swift */; };
-		16D3DF531A09D4C700284661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF511A09D4C700284661 /* Main.storyboard */; };
 		16D3DF551A09D4C700284661 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF541A09D4C700284661 /* Images.xcassets */; };
 		16D3DF581A09D4C700284661 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF561A09D4C700284661 /* LaunchScreen.xib */; };
 		16D3DF641A09D4C700284661 /* CLAutoProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF631A09D4C700284661 /* CLAutoProTests.swift */; };
+		16D3DF741A09E06800284661 /* SearchesMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF731A09E06800284661 /* SearchesMainView.xib */; };
+		16D3DF761A09E08F00284661 /* AutoInformMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF751A09E08F00284661 /* AutoInformMainView.xib */; };
+		16D3DF781A09E0BB00284661 /* SettingsMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF771A09E0BB00284661 /* SettingsMainView.xib */; };
+		16D3DF7A1A09E4D800284661 /* SearchesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */; };
+		16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */; };
+		16D3DF801A09E8C600284661 /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +37,17 @@
 		16D3DF4A1A09D4C700284661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D3DF4D1A09D4C700284661 /* CLAutoPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLAutoPro.xcdatamodel; sourceTree = "<group>"; };
 		16D3DF4F1A09D4C700284661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		16D3DF521A09D4C700284661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16D3DF541A09D4C700284661 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		16D3DF571A09D4C700284661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		16D3DF5D1A09D4C700284661 /* CLAutoProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLAutoProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D3DF621A09D4C700284661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16D3DF631A09D4C700284661 /* CLAutoProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAutoProTests.swift; sourceTree = "<group>"; };
+		16D3DF731A09E06800284661 /* SearchesMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchesMainView.xib; sourceTree = "<group>"; };
+		16D3DF751A09E08F00284661 /* AutoInformMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoInformMainView.xib; sourceTree = "<group>"; };
+		16D3DF771A09E0BB00284661 /* SettingsMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsMainView.xib; sourceTree = "<group>"; };
+		16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesMainViewController.swift; sourceTree = "<group>"; };
+		16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInformMainViewController.swift; sourceTree = "<group>"; };
+		16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +89,10 @@
 		16D3DF471A09D4C700284661 /* CLAutoPro */ = {
 			isa = PBXGroup;
 			children = (
-				16D3DF4A1A09D4C700284661 /* AppDelegate.swift */,
-				16D3DF4F1A09D4C700284661 /* ViewController.swift */,
-				16D3DF511A09D4C700284661 /* Main.storyboard */,
-				16D3DF541A09D4C700284661 /* Images.xcassets */,
-				16D3DF561A09D4C700284661 /* LaunchScreen.xib */,
-				16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */,
+				16D3DF721A09E03500284661 /* Domain */,
+				16D3DF711A09E02C00284661 /* ViewClasses */,
+				16D3DF701A09E02000284661 /* Views */,
+				16D3DF6F1A09DFF800284661 /* AppBase */,
 				16D3DF481A09D4C700284661 /* Supporting Files */,
 			);
 			path = CLAutoPro;
@@ -113,6 +121,45 @@
 				16D3DF621A09D4C700284661 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16D3DF6F1A09DFF800284661 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF4A1A09D4C700284661 /* AppDelegate.swift */,
+				16D3DF4F1A09D4C700284661 /* ViewController.swift */,
+				16D3DF541A09D4C700284661 /* Images.xcassets */,
+				16D3DF561A09D4C700284661 /* LaunchScreen.xib */,
+				16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */,
+			);
+			name = AppBase;
+			sourceTree = "<group>";
+		};
+		16D3DF701A09E02000284661 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF731A09E06800284661 /* SearchesMainView.xib */,
+				16D3DF751A09E08F00284661 /* AutoInformMainView.xib */,
+				16D3DF771A09E0BB00284661 /* SettingsMainView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		16D3DF711A09E02C00284661 /* ViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */,
+				16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */,
+				16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */,
+			);
+			name = ViewClasses;
+			sourceTree = "<group>";
+		};
+		16D3DF721A09E03500284661 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16D3DF531A09D4C700284661 /* Main.storyboard in Resources */,
 				16D3DF581A09D4C700284661 /* LaunchScreen.xib in Resources */,
+				16D3DF741A09E06800284661 /* SearchesMainView.xib in Resources */,
+				16D3DF781A09E0BB00284661 /* SettingsMainView.xib in Resources */,
 				16D3DF551A09D4C700284661 /* Images.xcassets in Resources */,
+				16D3DF761A09E08F00284661 /* AutoInformMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D3DF801A09E8C600284661 /* SettingsMainViewController.swift in Sources */,
 				16D3DF501A09D4C700284661 /* ViewController.swift in Sources */,
 				16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */,
+				16D3DF7A1A09E4D800284661 /* SearchesMainViewController.swift in Sources */,
 				16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */,
+				16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		16D3DF511A09D4C700284661 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16D3DF521A09D4C700284661 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16D3DF561A09D4C700284661 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CLAutoPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CLAutoPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

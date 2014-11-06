@@ -14,8 +14,7 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet var contentTableView: UITableView?
     var tableViewData = SearchesMainTableViewData()
     
-     required init(coder aDecoder: NSCoder)
-    {
+     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -23,7 +22,7 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
         self.navigationItem.title = "Search"
     }
@@ -36,12 +35,24 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
         return tableViewData.numberOfRowsInTableSection(section)
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         return cell
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return tableViewData.headerViewForSection(section)
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 26.0
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.0001
     }
 }

@@ -1,15 +1,18 @@
 //
-//  SettingsMainViewController.swift
+//  TextualTableSectionHeaderViewController.swift
 //  CLAutoPro
 //
-//  Created by Chris Wineland on 11/4/14.
+//  Created by Chris Wineland on 11/6/14.
 //  Copyright (c) 2014 Chris Wineland. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class SettingsMainViewController: UIViewController {
+class TextualTableSectionHeaderViewController : UIViewController {
+    
+    @IBOutlet var headerLable : UILabel?
+    var lableText = String()
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -19,8 +22,13 @@ class SettingsMainViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
+    init(text : String){
+        super.init(nibName: "TextualTableSectionHeaderView", bundle: nil)
+        lableText = text
+    }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        headerLable?.text = lableText
     }
 
 }

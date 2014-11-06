@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0FB56EB11A0ACD71004CC08B /* SearchesMainTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */; };
 		0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB21A0AD8A6004CC08B /* Search.swift */; };
+		0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */; };
+		0FB56EB71A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */; };
 		16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4A1A09D4C700284661 /* AppDelegate.swift */; };
 		16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */; };
 		16D3DF501A09D4C700284661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4F1A09D4C700284661 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesMainTableViewData.swift; sourceTree = "<group>"; };
 		0FB56EB21A0AD8A6004CC08B /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextualTableSectionHeaderView.xib; sourceTree = "<group>"; };
+		0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextualTableSectionHeaderViewController.swift; sourceTree = "<group>"; };
 		16D3DF451A09D4C700284661 /* CLAutoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLAutoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D3DF491A09D4C700284661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16D3DF4A1A09D4C700284661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				16D3DF731A09E06800284661 /* SearchesMainView.xib */,
 				16D3DF751A09E08F00284661 /* AutoInformMainView.xib */,
 				16D3DF771A09E0BB00284661 /* SettingsMainView.xib */,
+				0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */,
 				16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */,
 				16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */,
+				0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				16D3DF741A09E06800284661 /* SearchesMainView.xib in Resources */,
 				16D3DF781A09E0BB00284661 /* SettingsMainView.xib in Resources */,
 				16D3DF551A09D4C700284661 /* Images.xcassets in Resources */,
+				0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */,
 				16D3DF761A09E08F00284661 /* AutoInformMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +281,7 @@
 				16D3DF501A09D4C700284661 /* ViewController.swift in Sources */,
 				16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */,
 				16D3DF7A1A09E4D800284661 /* SearchesMainViewController.swift in Sources */,
+				0FB56EB71A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift in Sources */,
 				16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */,
 				0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */,
 				16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */,

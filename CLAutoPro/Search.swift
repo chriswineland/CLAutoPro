@@ -13,23 +13,24 @@ class Search{
     var creationDate = NSDate()
     var lastQuieryDate = NSDate()
     //required
-    var location = [String]()
+    var locations = [String]()
     var make, model : String?
     //optional
     var yearMin, yearMax, priceMin, priceMax, milesMin, milesMax : Int?
     var color : String?
     var transmission, hasImage, hasTitle : Bool?
+    //molded data
+    var quieryStrings = [String]()
     
-    init() {
+    init(){
         
     }
     
     func isValidSearch() -> Bool{
-        return location.count > 0 && make != nil && model != nil
+        return locations.count > 0 && make != nil && model != nil
     }
     
-    func quieryString() -> String{
-        return ""
+    private func appendLocationToQuierySting(quieryString : String){
+        
     }
-    
 }

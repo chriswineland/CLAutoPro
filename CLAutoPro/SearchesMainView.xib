@@ -24,7 +24,6 @@
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.89954377691493992" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="EVk-cR-ftf" secondAttribute="bottom" id="0xZ-XM-EG5"/>
                 <constraint firstAttribute="trailing" secondItem="EVk-cR-ftf" secondAttribute="trailing" id="6y9-mS-T5c"/>

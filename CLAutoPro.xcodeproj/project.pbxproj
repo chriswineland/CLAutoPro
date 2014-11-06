@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				16D3DF721A09E03500284661 /* Domain */,
-				16D3DF711A09E02C00284661 /* ViewClasses */,
+				16D3DF711A09E02C00284661 /* ViewControllers */,
 				16D3DF701A09E02000284661 /* Views */,
 				16D3DF6F1A09DFF800284661 /* AppBase */,
 				16D3DF481A09D4C700284661 /* Supporting Files */,
@@ -149,14 +149,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		16D3DF711A09E02C00284661 /* ViewClasses */ = {
+		16D3DF711A09E02C00284661 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */,
 				16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */,
 				16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */,
 			);
-			name = ViewClasses;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		16D3DF721A09E03500284661 /* Domain */ = {

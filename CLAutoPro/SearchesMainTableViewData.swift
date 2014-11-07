@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 
 
-class SearchesMainTableViewData{
+class SearchesMainTableViewData : TableViewDataBase {
     
     var recentSearches = [Search]()
     var savedSearches = [Search]()
     
-    init(){
+    override init(){
         //this should be fetching the saved searches from on device storage
+        super.init()
         
         recentSearches.append(Search())
         recentSearches.append(Search())
@@ -26,8 +27,8 @@ class SearchesMainTableViewData{
         savedSearches.append(Search())
     }
     
-    func numberOfRowsInTableSection(tableSection:Int) -> Int{
-        switch tableSection{
+    func numberOfRowsInTableSection(tableSection:Int) -> Int {  
+        switch tableSection {
         case 0:
             return 1
         case 1:
@@ -39,14 +40,14 @@ class SearchesMainTableViewData{
         }
     }
     
-    func numberOfSectionsInTableView() -> Int{
+    func numberOfSectionsInTableView() -> Int {
         return 3
     }
     
-    func headerViewForSection(tableSection:Int) -> UIView{
+    func headerViewForSection(tableSection:Int) -> UIView {
         var headerview : UIViewController
         
-        switch tableSection{
+        switch tableSection {
         case 0:
             headerview = TextualTableSectionHeaderViewController(text: "New Search")
         case 1:

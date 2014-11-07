@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoInformMainViewController" customModule="CLAutoPro" customModuleProvider="target">
             <connections>
+                <outlet property="contentTableView" destination="Yeg-Ah-4gX" id="QEf-4T-ib8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="mOc-ga-mn2"/>
             </connections>
         </placeholder>
@@ -13,7 +14,23 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.0" green="0.20850745130001425" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-Ah-4gX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eyq-hs-xOB"/>
+                        <outlet property="delegate" destination="-1" id="3B1-bu-Efb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Yeg-Ah-4gX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3ga-GW-3QT"/>
+                <constraint firstAttribute="trailing" secondItem="Yeg-Ah-4gX" secondAttribute="trailing" id="7T6-8z-NtN"/>
+                <constraint firstAttribute="bottom" secondItem="Yeg-Ah-4gX" secondAttribute="bottom" id="j3s-YC-Ket"/>
+                <constraint firstItem="Yeg-Ah-4gX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rhD-rQ-l6a"/>
+            </constraints>
         </view>
     </objects>
 </document>

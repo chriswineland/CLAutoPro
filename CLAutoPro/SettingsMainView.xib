@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsMainViewController" customModule="CLAutoPro" customModuleProvider="target">
             <connections>
+                <outlet property="contentTableView" destination="Eza-kZ-Bwj" id="vb3-VC-gps"/>
                 <outlet property="view" destination="iN0-l3-epB" id="b2L-1A-pmG"/>
             </connections>
         </placeholder>
@@ -13,7 +14,23 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.047118742969354699" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eza-kZ-Bwj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IgT-dq-MIE"/>
+                        <outlet property="delegate" destination="-1" id="uHZ-xb-kTq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eza-kZ-Bwj" secondAttribute="trailing" id="QCC-IY-Nu4"/>
+                <constraint firstItem="Eza-kZ-Bwj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="w3f-zs-MUz"/>
+                <constraint firstAttribute="bottom" secondItem="Eza-kZ-Bwj" secondAttribute="bottom" id="wcR-VZ-aVj"/>
+                <constraint firstItem="Eza-kZ-Bwj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yYj-kk-EU6"/>
+            </constraints>
         </view>
     </objects>
 </document>

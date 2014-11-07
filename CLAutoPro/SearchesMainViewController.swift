@@ -49,10 +49,10 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 26.0
+        return tableViewData.heightForTableViewSectionHeaders()
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.0001
+        return tableViewData.heightForTableViewSectionFooters()
     }
 }

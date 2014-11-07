@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uK-KZ-SDg">
-                    <rect key="frame" x="262" y="290" width="76" height="19.5"/>
+                    <rect key="frame" x="8" y="290" width="76" height="19.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -24,8 +24,8 @@
             </subviews>
             <color key="backgroundColor" red="0.92941182851791382" green="0.92941182851791382" blue="0.92941182851791382" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="1uK-KZ-SDg" secondAttribute="centerX" id="ajK-EL-xyI"/>
                 <constraint firstAttribute="centerY" secondItem="1uK-KZ-SDg" secondAttribute="centerY" id="k7h-UH-57i"/>
+                <constraint firstItem="1uK-KZ-SDg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="xQI-kh-bZA"/>
             </constraints>
             <point key="canvasLocation" x="339" y="350"/>
         </view>

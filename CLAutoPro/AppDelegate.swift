@@ -21,21 +21,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.makeKeyAndVisible()
         
         let rootTabBarController: UITabBarController = UITabBarController()
+        rootTabBarController.navigationController?.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
         
         let searchesNavigationController: UINavigationController = UINavigationController()
         searchesNavigationController.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 1)
         let searchesMainView = SearchesMainViewController(nibName: "SearchesMainView", bundle: nil)
         searchesNavigationController.viewControllers = [searchesMainView]
+        searchesNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
         
         let autoInformNavigationController: UINavigationController = UINavigationController()
         autoInformNavigationController.tabBarItem = UITabBarItem(title: "Inform", image: nil, tag: 2)
         let autoInformMainView = AutoInformMainViewController(nibName: "AutoInformMainView", bundle: nil)
         autoInformNavigationController.viewControllers = [autoInformMainView]
+        autoInformNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
         
         let settingsNavigationController: UINavigationController = UINavigationController()
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 3)
         let settingsMainView = SettingsMainViewController(nibName: "SettingsMainView", bundle: nil)
         settingsNavigationController.viewControllers = [settingsMainView]
+        settingsNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
         
         let tabBarControllerArray = [searchesNavigationController, autoInformNavigationController, settingsNavigationController]
         rootTabBarController.viewControllers = tabBarControllerArray

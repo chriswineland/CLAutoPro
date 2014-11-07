@@ -23,6 +23,15 @@
 		16D3DF7A1A09E4D800284661 /* SearchesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */; };
 		16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */; };
 		16D3DF801A09E8C600284661 /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */; };
+		16D3DF8E1A0C70E400284661 /* alarm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF8B1A0C70E400284661 /* alarm@3x.png */; };
+		16D3DF8F1A0C70E400284661 /* alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF8C1A0C70E400284661 /* alarm@2x.png */; };
+		16D3DF901A0C70E400284661 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF8D1A0C70E400284661 /* alarm.png */; };
+		16D3DF941A0C711100284661 /* settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF911A0C711100284661 /* settings@3x.png */; };
+		16D3DF951A0C711100284661 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF921A0C711100284661 /* settings@2x.png */; };
+		16D3DF961A0C711100284661 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF931A0C711100284661 /* settings.png */; };
+		16D3DF9A1A0C72C400284661 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF971A0C72C400284661 /* search@3x.png */; };
+		16D3DF9B1A0C72C400284661 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF981A0C72C400284661 /* search@2x.png */; };
+		16D3DF9C1A0C72C400284661 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D3DF991A0C72C400284661 /* search.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,15 @@
 		16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesMainViewController.swift; sourceTree = "<group>"; };
 		16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInformMainViewController.swift; sourceTree = "<group>"; };
 		16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainViewController.swift; sourceTree = "<group>"; };
+		16D3DF8B1A0C70E400284661 /* alarm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@3x.png"; sourceTree = "<group>"; };
+		16D3DF8C1A0C70E400284661 /* alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm@2x.png"; sourceTree = "<group>"; };
+		16D3DF8D1A0C70E400284661 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		16D3DF911A0C711100284661 /* settings@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@3x.png"; sourceTree = "<group>"; };
+		16D3DF921A0C711100284661 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		16D3DF931A0C711100284661 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		16D3DF971A0C72C400284661 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
+		16D3DF981A0C72C400284661 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		16D3DF991A0C72C400284661 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,7 @@
 		16D3DF471A09D4C700284661 /* CLAutoPro */ = {
 			isa = PBXGroup;
 			children = (
+				16D3DF811A0C702500284661 /* Resources */,
 				16D3DF721A09E03500284661 /* Domain */,
 				16D3DF711A09E02C00284661 /* ViewControllers */,
 				16D3DF701A09E02000284661 /* Views */,
@@ -172,6 +191,46 @@
 				0FB56EB21A0AD8A6004CC08B /* Search.swift */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		16D3DF811A0C702500284661 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF841A0C706500284661 /* SettingsTabBarImage */,
+				16D3DF831A0C705700284661 /* AutoInformTabBarImage */,
+				16D3DF821A0C703D00284661 /* SearchTabBarImage */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		16D3DF821A0C703D00284661 /* SearchTabBarImage */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF971A0C72C400284661 /* search@3x.png */,
+				16D3DF981A0C72C400284661 /* search@2x.png */,
+				16D3DF991A0C72C400284661 /* search.png */,
+			);
+			name = SearchTabBarImage;
+			sourceTree = "<group>";
+		};
+		16D3DF831A0C705700284661 /* AutoInformTabBarImage */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF8B1A0C70E400284661 /* alarm@3x.png */,
+				16D3DF8C1A0C70E400284661 /* alarm@2x.png */,
+				16D3DF8D1A0C70E400284661 /* alarm.png */,
+			);
+			name = AutoInformTabBarImage;
+			sourceTree = "<group>";
+		};
+		16D3DF841A0C706500284661 /* SettingsTabBarImage */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF911A0C711100284661 /* settings@3x.png */,
+				16D3DF921A0C711100284661 /* settings@2x.png */,
+				16D3DF931A0C711100284661 /* settings.png */,
+			);
+			name = SettingsTabBarImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,11 +313,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D3DF9A1A0C72C400284661 /* search@3x.png in Resources */,
+				16D3DF8F1A0C70E400284661 /* alarm@2x.png in Resources */,
 				16D3DF581A09D4C700284661 /* LaunchScreen.xib in Resources */,
 				16D3DF741A09E06800284661 /* SearchesMainView.xib in Resources */,
 				16D3DF781A09E0BB00284661 /* SettingsMainView.xib in Resources */,
+				16D3DF8E1A0C70E400284661 /* alarm@3x.png in Resources */,
+				16D3DF901A0C70E400284661 /* alarm.png in Resources */,
+				16D3DF961A0C711100284661 /* settings.png in Resources */,
 				16D3DF551A09D4C700284661 /* Images.xcassets in Resources */,
 				0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */,
+				16D3DF9C1A0C72C400284661 /* search.png in Resources */,
+				16D3DF9B1A0C72C400284661 /* search@2x.png in Resources */,
+				16D3DF951A0C711100284661 /* settings@2x.png in Resources */,
+				16D3DF941A0C711100284661 /* settings@3x.png in Resources */,
 				16D3DF761A09E08F00284661 /* AutoInformMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

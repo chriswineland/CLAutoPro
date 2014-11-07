@@ -16,30 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        let navcolor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         //self.window!.backgroundColor = UIColor.redColor()
         self.window!.makeKeyAndVisible()
         
         let rootTabBarController: UITabBarController = UITabBarController()
-        rootTabBarController.navigationController?.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
+        rootTabBarController.navigationController?.navigationBar.barTintColor = navcolor
         
         let searchesNavigationController: UINavigationController = UINavigationController()
         searchesNavigationController.tabBarItem = UITabBarItem(title: "Search", image: nil, tag: 1)
         let searchesMainView = SearchesMainViewController(nibName: "SearchesMainView", bundle: nil)
         searchesNavigationController.viewControllers = [searchesMainView]
-        searchesNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
+        searchesNavigationController.navigationBar.barTintColor = navcolor
         
         let autoInformNavigationController: UINavigationController = UINavigationController()
         autoInformNavigationController.tabBarItem = UITabBarItem(title: "Inform", image: nil, tag: 2)
         let autoInformMainView = AutoInformMainViewController(nibName: "AutoInformMainView", bundle: nil)
         autoInformNavigationController.viewControllers = [autoInformMainView]
-        autoInformNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
+        autoInformNavigationController.navigationBar.barTintColor = navcolor
         
         let settingsNavigationController: UINavigationController = UINavigationController()
         settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: nil, tag: 3)
         let settingsMainView = SettingsMainViewController(nibName: "SettingsMainView", bundle: nil)
         settingsNavigationController.viewControllers = [settingsMainView]
-        settingsNavigationController.navigationBar.barTintColor = UIColor(red: 238.0/255.0, green: 238.0/255.0, blue: 238.0/255.0, alpha: 1)
+        settingsNavigationController.navigationBar.barTintColor = navcolor
         
         let tabBarControllerArray = [searchesNavigationController, autoInformNavigationController, settingsNavigationController]
         rootTabBarController.viewControllers = tabBarControllerArray

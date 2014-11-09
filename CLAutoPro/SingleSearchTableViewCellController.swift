@@ -9,6 +9,45 @@
 import Foundation
 import UIKit
 
-class SingleSearchTableViewCellController {
+class SingleSearchTableViewCellController : UITableViewCell {
+
+    @IBOutlet var dateMonthLable : UILabel?
+    @IBOutlet var dateDayLable : UILabel?
+    @IBOutlet var yearLable : UILabel?
+    @IBOutlet var makeModelLable : UILabel?
     
+    var search : Search
+    
+    required init(coder aDecoder: NSCoder) {
+        search = Search()
+        super.init()
+    }
+    
+    init(previousSearch s : Search){
+        search = s
+        super.init()
+    }
+    
+    func formatCell(){
+        formatDateMonthLable()
+        formatDateDayLable()
+        formatYearRangeLable()
+        formatMakeModelLable()
+    }
+    
+    private func formatDateMonthLable(){
+        
+    }
+    
+    private func formatDateDayLable(){
+        
+    }
+    
+    private func formatYearRangeLable(){
+        
+    }
+    
+    private func formatMakeModelLable(){
+        
+    }
 }

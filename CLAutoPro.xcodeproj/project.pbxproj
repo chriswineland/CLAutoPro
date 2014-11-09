@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8DD97B1A0FDEBD0090C85F /* SingleSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DD97A1A0FDEBD0090C85F /* SingleSearchTableViewCell.xib */; };
+		0F8DD9801A0FDF850090C85F /* SingleSearchTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DD97F1A0FDF850090C85F /* SingleSearchTableViewCellController.swift */; };
+		0F8DD9851A0FE2AD0090C85F /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DD9821A0FE2AD0090C85F /* info@3x.png */; };
+		0F8DD9861A0FE2AD0090C85F /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DD9831A0FE2AD0090C85F /* info@2x.png */; };
+		0F8DD9871A0FE2AD0090C85F /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DD9841A0FE2AD0090C85F /* info.png */; };
 		0FB56EB11A0ACD71004CC08B /* SearchesMainTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */; };
 		0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB21A0AD8A6004CC08B /* Search.swift */; };
 		0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */; };
@@ -48,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F8DD97A1A0FDEBD0090C85F /* SingleSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleSearchTableViewCell.xib; sourceTree = "<group>"; };
+		0F8DD97F1A0FDF850090C85F /* SingleSearchTableViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSearchTableViewCellController.swift; sourceTree = "<group>"; };
+		0F8DD9821A0FE2AD0090C85F /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
+		0F8DD9831A0FE2AD0090C85F /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		0F8DD9841A0FE2AD0090C85F /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		0FB56EB01A0ACD71004CC08B /* SearchesMainTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchesMainTableViewData.swift; sourceTree = "<group>"; };
 		0FB56EB21A0AD8A6004CC08B /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextualTableSectionHeaderView.xib; sourceTree = "<group>"; };
@@ -100,6 +110,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8DD9771A0FDDBE0090C85F /* BasePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF731A09E06800284661 /* SearchesMainView.xib */,
+				16D3DF751A09E08F00284661 /* AutoInformMainView.xib */,
+				16D3DF771A09E0BB00284661 /* SettingsMainView.xib */,
+			);
+			name = BasePageViews;
+			sourceTree = "<group>";
+		};
+		0F8DD9781A0FDE1D0090C85F /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */,
+			);
+			name = HeaderViews;
+			sourceTree = "<group>";
+		};
+		0F8DD9791A0FDE420090C85F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F8DD97A1A0FDEBD0090C85F /* SingleSearchTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		0F8DD97C1A0FDF030090C85F /* TableViewCellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F8DD97F1A0FDF850090C85F /* SingleSearchTableViewCellController.swift */,
+			);
+			name = TableViewCellControllers;
+			sourceTree = "<group>";
+		};
+		0F8DD97D1A0FDF170090C85F /* HeaderViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */,
+			);
+			name = HeaderViewControllers;
+			sourceTree = "<group>";
+		};
+		0F8DD97E1A0FDF280090C85F /* BasePageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */,
+				16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */,
+				16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */,
+			);
+			name = BasePageViewControllers;
+			sourceTree = "<group>";
+		};
+		0F8DD9811A0FE28B0090C85F /* InfoImage */ = {
+			isa = PBXGroup;
+			children = (
+				0F8DD9821A0FE2AD0090C85F /* info@3x.png */,
+				0F8DD9831A0FE2AD0090C85F /* info@2x.png */,
+				0F8DD9841A0FE2AD0090C85F /* info.png */,
+			);
+			name = InfoImage;
+			sourceTree = "<group>";
+		};
 		16D3DF3C1A09D4C700284661 = {
 			isa = PBXGroup;
 			children = (
@@ -171,10 +243,9 @@
 		16D3DF701A09E02000284661 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				16D3DF731A09E06800284661 /* SearchesMainView.xib */,
-				16D3DF751A09E08F00284661 /* AutoInformMainView.xib */,
-				16D3DF771A09E0BB00284661 /* SettingsMainView.xib */,
-				0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */,
+				0F8DD9791A0FDE420090C85F /* TableViewCells */,
+				0F8DD9781A0FDE1D0090C85F /* HeaderViews */,
+				0F8DD9771A0FDDBE0090C85F /* BasePageViews */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -182,10 +253,9 @@
 		16D3DF711A09E02C00284661 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				16D3DF791A09E4D800284661 /* SearchesMainViewController.swift */,
-				16D3DF7B1A09E87E00284661 /* AutoInformMainViewController.swift */,
-				16D3DF7F1A09E8C600284661 /* SettingsMainViewController.swift */,
-				0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */,
+				0F8DD97C1A0FDF030090C85F /* TableViewCellControllers */,
+				0F8DD97E1A0FDF280090C85F /* BasePageViewControllers */,
+				0F8DD97D1A0FDF170090C85F /* HeaderViewControllers */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +275,7 @@
 		16D3DF811A0C702500284661 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0F8DD9811A0FE28B0090C85F /* InfoImage */,
 				16D3DF841A0C706500284661 /* SettingsTabBarImage */,
 				16D3DF831A0C705700284661 /* AutoInformTabBarImage */,
 				16D3DF821A0C703D00284661 /* SearchTabBarImage */,
@@ -326,11 +397,15 @@
 				16D3DF8F1A0C70E400284661 /* alarm@2x.png in Resources */,
 				16D3DF581A09D4C700284661 /* LaunchScreen.xib in Resources */,
 				16D3DF741A09E06800284661 /* SearchesMainView.xib in Resources */,
+				0F8DD9851A0FE2AD0090C85F /* info@3x.png in Resources */,
 				16D3DF781A09E0BB00284661 /* SettingsMainView.xib in Resources */,
+				0F8DD9861A0FE2AD0090C85F /* info@2x.png in Resources */,
 				16D3DF8E1A0C70E400284661 /* alarm@3x.png in Resources */,
 				16D3DF901A0C70E400284661 /* alarm.png in Resources */,
 				16D3DF961A0C711100284661 /* settings.png in Resources */,
 				16D3DF551A09D4C700284661 /* Images.xcassets in Resources */,
+				0F8DD97B1A0FDEBD0090C85F /* SingleSearchTableViewCell.xib in Resources */,
+				0F8DD9871A0FE2AD0090C85F /* info.png in Resources */,
 				0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */,
 				16D3DF9C1A0C72C400284661 /* search.png in Resources */,
 				16D3DF9B1A0C72C400284661 /* search@2x.png in Resources */,
@@ -363,6 +438,7 @@
 				16D3DF9E1A0D47A100284661 /* AutoInformMainTableViewData.swift in Sources */,
 				0FB56EB71A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift in Sources */,
 				16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */,
+				0F8DD9801A0FDF850090C85F /* SingleSearchTableViewCellController.swift in Sources */,
 				0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */,
 				16D3DF7C1A09E87E00284661 /* AutoInformMainViewController.swift in Sources */,
 				0FB56EB11A0ACD71004CC08B /* SearchesMainTableViewData.swift in Sources */,

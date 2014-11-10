@@ -37,7 +37,8 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID())
+        var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID(), forIndexPath: indexPath) as SingleSearchTableViewCellController
+        cell.formatCell()
         return cell
     }
 

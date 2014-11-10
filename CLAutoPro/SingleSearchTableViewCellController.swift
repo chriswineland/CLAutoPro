@@ -18,6 +18,10 @@ class SingleSearchTableViewCellController : UITableViewCell {
     
     var search : Search
     
+    class func reuseID() -> String{
+        return "SingleSearchTableViewCellType"
+    }
+    
     required init(coder aDecoder: NSCoder) {
         search = Search()
         super.init()

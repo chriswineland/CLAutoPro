@@ -25,6 +25,7 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad(){
         super.viewDidLoad()
         self.navigationItem.title = "Search"
+        self.contentTableView?.registerNib(UINib(nibName: "SingleSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SingleSearchTableViewCellController.reuseID())
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -36,7 +37,7 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID())
         return cell
     }
 

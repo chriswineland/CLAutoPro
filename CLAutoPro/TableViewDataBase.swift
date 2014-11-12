@@ -11,11 +11,11 @@ import UIKit
 
 class TableViewDataBase {
     
-    func heightForTableViewSectionHeaders() -> CGFloat {
+    class func heightForTableViewSectionHeaders() -> CGFloat {
         return 26.0
     }
     
-    func heightForTableViewSectionFooters() -> CGFloat {
+    class func heightForTableViewSectionFooters() -> CGFloat {
         return 0.0001
     }
 }

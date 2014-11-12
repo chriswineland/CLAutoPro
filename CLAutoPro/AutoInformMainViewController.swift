@@ -12,7 +12,6 @@ import UIKit
 class AutoInformMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var contentTableView: UITableView?
-    var tableViewData = AutoInformMainTableViewData()
     
     required init(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
@@ -27,11 +26,11 @@ class AutoInformMainViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return tableViewData.numberOfSectionsInTableView()
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewData.numberOfRowsInTableSection(section)
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
@@ -44,10 +43,10 @@ class AutoInformMainViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionHeaders()
+        return TableViewDataBase.heightForTableViewSectionHeaders()
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionFooters()
+        return TableViewDataBase.heightForTableViewSectionFooters()
     }
 }

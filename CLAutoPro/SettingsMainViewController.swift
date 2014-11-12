@@ -12,7 +12,6 @@ import UIKit
 class SettingsMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var contentTableView: UITableView?
-    var tableViewData = SettingsMainTableViewData()
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -27,11 +26,11 @@ class SettingsMainViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return tableViewData.numberOfSectionsInTableView()
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewData.numberOfRowsInTableSection(section)
+        return 2
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
@@ -44,10 +43,10 @@ class SettingsMainViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionHeaders()
+        return TableViewDataBase.heightForTableViewSectionHeaders()
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionFooters()
+        return TableViewDataBase.heightForTableViewSectionFooters()
     }
 }

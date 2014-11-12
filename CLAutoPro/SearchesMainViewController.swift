@@ -12,7 +12,10 @@ import UIKit
 class SearchesMainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var contentTableView: UITableView?
-    var tableViewData = SearchesMainTableViewData()
+    
+    var recentSearches = [Search]()
+    var savedSearches = [Search]()
+
      required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -25,36 +28,63 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         self.navigationItem.title = "Search"
         
+        populateTableViewData()
+        
         var nib = UINib(nibName: "SingleSearchTableViewCell", bundle: nil)
         contentTableView?.registerNib(nib, forCellReuseIdentifier: SingleSearchTableViewCellController.reuseID())
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    func populateTableViewData(){
+        recentSearches.append(Search())
+        recentSearches.append(Search())
+        
+        savedSearches.append(Search())
+        savedSearches.append(Search())
+        savedSearches.append(Search())
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return tableViewData.numberOfSectionsInTableView()
+        return 3
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewData.numberOfRowsInTableSection(section)
+        switch section {
+        case 0:
+            return 1
+        case 1:
+            return recentSearches.count == 0 ? 1 : recentSearches.count
+        case 2:
+            return savedSearches.count == 0 ? 1 : savedSearches.count
+        default:
+            return 0
+        }
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         if(indexPath.section == 0){
             return creatNewSearchCell()
-        } else if(indexPath.section == 1 && tableViewData.shouldDisplaySavedSearchesPlaceholder()){
+        } else if(indexPath.section == 1 && savedSearches.count == 0){
             return creatNoSavedSearchCell()
-        } else if(indexPath.section == 2 && tableViewData.shouldDisplayRecentSearchesPlaceholder()){
+        } else if(indexPath.section == 2 && recentSearches.count == 0){
             return createNoRecentSearchCell()
         } else {
             var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID(), forIndexPath: indexPath) as SingleSearchTableViewCellController
-            cell.search = tableViewData.searchDataForIndexPath(indexPath)
+            cell.search = searchDataForIndexPath(indexPath)
             cell.formatCell()
             return cell
         }
     }
+    
+    func searchDataForIndexPath(indexPath:NSIndexPath) -> Search {
+        if(indexPath.section == 1 && savedSearches.count >= indexPath.row){
+            return savedSearches[indexPath.row]
+        } else if(indexPath.section == 1 && recentSearches.count >= indexPath.row){
+            return recentSearches[indexPath.row]
+        } else {
+            return Search()
+        }
+    }
+
     
     func creatNewSearchCell() -> UITableViewCell {
         var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NewSearch")
@@ -80,14 +110,27 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableViewData.headerViewForSection(section)
+        var headerview : UIViewController
+        
+        switch section {
+        case 0:
+            headerview = TextualTableSectionHeaderViewController(text: "New Search")
+        case 1:
+            headerview = TextualTableSectionHeaderViewController(text: "Saved Searches")
+        case 2:
+            headerview = TextualTableSectionHeaderViewController(text: "Recent Searches")
+        default:
+            headerview = TextualTableSectionHeaderViewController(text: "")
+        }
+        
+        return headerview.view
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionHeaders()
+        return TableViewDataBase.heightForTableViewSectionHeaders()
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return tableViewData.heightForTableViewSectionFooters()
+        return TableViewDataBase.heightForTableViewSectionFooters()
     }
 }

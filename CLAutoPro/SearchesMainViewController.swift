@@ -26,7 +26,7 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        self.navigationItem.title = "Search"
+        self.navigationItem.title = "CLAutoPro"
         
         populateTableViewData()
         
@@ -107,6 +107,10 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        if(indexPath.section == 0){
+            var createSearchVC : CreateSearchViewController = CreateSearchViewController(nibName: "CreateSearchView", bundle: nil)
+            self.navigationController?.pushViewController(createSearchVC, animated: true)
+        }
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

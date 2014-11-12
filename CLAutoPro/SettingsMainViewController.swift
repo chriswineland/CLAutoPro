@@ -23,6 +23,7 @@ class SettingsMainViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "CLAutoPro"
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

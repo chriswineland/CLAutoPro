@@ -26,19 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rootTabBarController.navigationController?.navigationBar.barTintColor = navcolor
         
         let searchesNavigationController: UINavigationController = UINavigationController()
-        searchesNavigationController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "search.png"), tag: 1)
+        searchesNavigationController.tabBarItem = UITabBarItem(title: "CLAutoPro", image: UIImage(named: "search.png"), tag: 1)
         let searchesMainView = SearchesMainViewController(nibName: "SearchesMainView", bundle: nil)
         searchesNavigationController.viewControllers = [searchesMainView]
         searchesNavigationController.navigationBar.barTintColor = navcolor
         
         let autoInformNavigationController: UINavigationController = UINavigationController()
-        autoInformNavigationController.tabBarItem = UITabBarItem(title: "Inform", image: UIImage(named: "alarm.png"), tag: 2)
+        autoInformNavigationController.tabBarItem = UITabBarItem(title: "CLAutoPro", image: UIImage(named: "alarm.png"), tag: 2)
         let autoInformMainView = AutoInformMainViewController(nibName: "AutoInformMainView", bundle: nil)
         autoInformNavigationController.viewControllers = [autoInformMainView]
         autoInformNavigationController.navigationBar.barTintColor = navcolor
         
         let settingsNavigationController: UINavigationController = UINavigationController()
-        settingsNavigationController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "settings.png"), tag: 3)
+        settingsNavigationController.tabBarItem = UITabBarItem(title: "CLAutoPro", image: UIImage(named: "settings.png"), tag: 3)
         let settingsMainView = SettingsMainViewController(nibName: "SettingsMainView", bundle: nil)
         settingsNavigationController.viewControllers = [settingsMainView]
         settingsNavigationController.navigationBar.barTintColor = navcolor

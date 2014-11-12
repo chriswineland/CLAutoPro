@@ -13,7 +13,6 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet var contentTableView: UITableView?
     var tableViewData = SearchesMainTableViewData()
-    
      required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -25,7 +24,9 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad(){
         super.viewDidLoad()
         self.navigationItem.title = "Search"
-        self.contentTableView?.registerNib(UINib(nibName: "SingleSearchTableViewCell", bundle: nil), forCellReuseIdentifier: SingleSearchTableViewCellController.reuseID())
+        
+        var nib = UINib(nibName: "SingleSearchTableViewCell", bundle: nil)
+        contentTableView?.registerNib(nib, forCellReuseIdentifier: SingleSearchTableViewCellController.reuseID())
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,8 +39,12 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID(), forIndexPath: indexPath) as SingleSearchTableViewCellController
-        cell.formatCell()
+        //cell.formatCell()
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 54.0
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

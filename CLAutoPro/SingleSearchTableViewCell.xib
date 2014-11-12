@@ -2,77 +2,66 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleSearchTableViewCellController" customModule="CLAutoPro" customModuleProvider="target">
-            <connections>
-                <outlet property="dateDayLable" destination="K0i-Xa-sDj" id="JJj-nc-hHQ"/>
-                <outlet property="dateMonthLable" destination="WeR-Nv-bb5" id="2vI-Xz-4sK"/>
-                <outlet property="makeModelLable" destination="WaR-yz-fCn" id="7Nd-Ov-6fd"/>
-                <outlet property="yearLable" destination="xxo-x4-EZz" id="dLY-qP-l5r"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="54" id="Qmr-E4-xoR">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleSearchTableViewCell" rowHeight="54" id="Qmr-E4-xoR" customClass="SingleSearchTableViewCellController" customModule="CLAutoPro" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qmr-E4-xoR" id="Mbr-dQ-Icz">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="rMo-Fy-mJA">
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="rMo-Fy-mJA">
                         <rect key="frame" x="296" y="8" width="16" height="16"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-Xa-sDj">
-                        <rect key="frame" x="8" y="23" width="32" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="27" translatesAutoresizingMaskIntoConstraints="NO" id="K0i-Xa-sDj">
+                        <rect key="frame" x="8" y="23" width="26.5" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00-Pre" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-x4-EZz">
-                        <rect key="frame" x="48" y="8" width="72" height="39"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="72" id="OwJ-X5-jrN"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mazda Miata" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="136" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-yz-fCn">
+                        <rect key="frame" x="120" y="8" width="136" height="39"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mazda Miata" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-yz-fCn">
-                        <rect key="frame" x="128" y="8" width="184" height="39"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeR-Nv-bb5">
-                        <rect key="frame" x="8" y="8" width="32" height="18"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="32" id="rkh-Zu-q38"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="30" translatesAutoresizingMaskIntoConstraints="NO" id="WeR-Nv-bb5">
+                        <rect key="frame" x="8" y="8" width="29.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00-Pre" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="71" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-x4-EZz">
+                        <rect key="frame" x="42" y="8" width="70.5" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="WaR-yz-fCn" firstAttribute="trailing" secondItem="rMo-Fy-mJA" secondAttribute="trailing" id="2Yd-ib-eMK"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="K0i-Xa-sDj" secondAttribute="bottom" constant="-1.5" id="3FK-Yy-KUx"/>
-                    <constraint firstItem="K0i-Xa-sDj" firstAttribute="top" secondItem="Mbr-dQ-Icz" secondAttribute="topMargin" constant="15" id="4hc-Fg-7vZ"/>
-                    <constraint firstItem="WeR-Nv-bb5" firstAttribute="leading" secondItem="K0i-Xa-sDj" secondAttribute="leading" id="5nI-wi-Zc0"/>
-                    <constraint firstItem="WaR-yz-fCn" firstAttribute="top" secondItem="rMo-Fy-mJA" secondAttribute="top" id="63y-BX-ZQU"/>
-                    <constraint firstItem="xxo-x4-EZz" firstAttribute="top" secondItem="WeR-Nv-bb5" secondAttribute="top" id="DWj-tH-wiW"/>
-                    <constraint firstItem="K0i-Xa-sDj" firstAttribute="leading" secondItem="Mbr-dQ-Icz" secondAttribute="leadingMargin" id="Dmy-PL-Azf"/>
-                    <constraint firstItem="WaR-yz-fCn" firstAttribute="firstBaseline" secondItem="xxo-x4-EZz" secondAttribute="firstBaseline" id="FU3-NW-xnb"/>
-                    <constraint firstItem="xxo-x4-EZz" firstAttribute="leading" secondItem="WeR-Nv-bb5" secondAttribute="trailing" constant="8" symbolic="YES" id="FXh-fU-JLB"/>
-                    <constraint firstItem="K0i-Xa-sDj" firstAttribute="baseline" secondItem="xxo-x4-EZz" secondAttribute="baseline" id="ISt-91-4Wj"/>
-                    <constraint firstItem="WaR-yz-fCn" firstAttribute="leading" secondItem="xxo-x4-EZz" secondAttribute="trailing" constant="8" id="UsX-jR-5YC"/>
-                    <constraint firstItem="xxo-x4-EZz" firstAttribute="leading" secondItem="K0i-Xa-sDj" secondAttribute="trailing" constant="8" symbolic="YES" id="VZ0-BO-sAu"/>
-                    <constraint firstItem="WaR-yz-fCn" firstAttribute="baseline" secondItem="xxo-x4-EZz" secondAttribute="baseline" id="bSe-q2-oWf"/>
-                    <constraint firstItem="WeR-Nv-bb5" firstAttribute="top" secondItem="Mbr-dQ-Icz" secondAttribute="topMargin" id="mK9-Ti-OuE"/>
-                    <constraint firstItem="rMo-Fy-mJA" firstAttribute="trailing" secondItem="Mbr-dQ-Icz" secondAttribute="trailingMargin" id="mNb-ey-XdQ"/>
+                    <constraint firstItem="rMo-Fy-mJA" firstAttribute="trailing" secondItem="Mbr-dQ-Icz" secondAttribute="trailingMargin" id="7F7-7p-0bO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xxo-x4-EZz" secondAttribute="bottom" constant="-1.5" id="AWm-Hi-Swm"/>
+                    <constraint firstItem="WeR-Nv-bb5" firstAttribute="leading" secondItem="Mbr-dQ-Icz" secondAttribute="leadingMargin" id="O1p-fC-TNB"/>
+                    <constraint firstItem="xxo-x4-EZz" firstAttribute="leading" secondItem="K0i-Xa-sDj" secondAttribute="trailing" constant="8" id="Rbu-TY-lph"/>
+                    <constraint firstItem="WeR-Nv-bb5" firstAttribute="top" secondItem="Mbr-dQ-Icz" secondAttribute="topMargin" id="Uls-08-E66"/>
+                    <constraint firstItem="rMo-Fy-mJA" firstAttribute="top" secondItem="Mbr-dQ-Icz" secondAttribute="topMargin" id="WfY-XQ-BDg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WaR-yz-fCn" secondAttribute="bottom" constant="-1.5" id="XV3-vh-R62"/>
+                    <constraint firstItem="K0i-Xa-sDj" firstAttribute="top" secondItem="WeR-Nv-bb5" secondAttribute="bottom" constant="-3" id="XXM-b0-5K2"/>
+                    <constraint firstItem="K0i-Xa-sDj" firstAttribute="leading" secondItem="Mbr-dQ-Icz" secondAttribute="leadingMargin" id="ml7-Ze-h1e"/>
+                    <constraint firstAttribute="centerY" secondItem="xxo-x4-EZz" secondAttribute="centerY" constant="-0.75" id="oZP-I1-zD8"/>
+                    <constraint firstAttribute="centerY" secondItem="WaR-yz-fCn" secondAttribute="centerY" constant="-0.75" id="stH-qT-I4W"/>
+                    <constraint firstItem="WaR-yz-fCn" firstAttribute="leading" secondItem="xxo-x4-EZz" secondAttribute="trailing" constant="7" id="yOh-ot-Y0N"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="dateDayLable" destination="K0i-Xa-sDj" id="6cj-vl-pMg"/>
+                <outlet property="dateMonthLable" destination="WeR-Nv-bb5" id="fLW-XG-aGe"/>
+                <outlet property="makeModelLable" destination="WaR-yz-fCn" id="qha-Xx-0WO"/>
+                <outlet property="yearLable" destination="xxo-x4-EZz" id="lQk-ke-bLL"/>
+            </connections>
             <point key="canvasLocation" x="356" y="300"/>
         </tableViewCell>
     </objects>

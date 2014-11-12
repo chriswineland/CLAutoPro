@@ -29,6 +29,10 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
         contentTableView?.registerNib(nib, forCellReuseIdentifier: SingleSearchTableViewCellController.reuseID())
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return tableViewData.numberOfSectionsInTableView()
     }
@@ -38,13 +42,37 @@ class SearchesMainViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID(), forIndexPath: indexPath) as SingleSearchTableViewCellController
-        //cell.formatCell()
-        return cell
+        if(indexPath.section == 0){
+            return creatNewSearchCell()
+        } else if(indexPath.section == 1 && tableViewData.shouldDisplaySavedSearchesPlaceholder()){
+            return creatNoSavedSearchCell()
+        } else if(indexPath.section == 2 && tableViewData.shouldDisplayRecentSearchesPlaceholder()){
+            return createNoRecentSearchCell()
+        } else {
+            var cell : SingleSearchTableViewCellController = tableView.dequeueReusableCellWithIdentifier(SingleSearchTableViewCellController.reuseID(), forIndexPath: indexPath) as SingleSearchTableViewCellController
+            cell.search = tableViewData.searchDataForIndexPath(indexPath)
+            cell.formatCell()
+            return cell
+        }
+    }
+    
+    func creatNewSearchCell() -> UITableViewCell {
+        var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NewSearch")
+        return cell;
+    }
+    
+    func creatNoSavedSearchCell() -> UITableViewCell {
+        var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NoSaved")
+        return cell;
+    }
+    
+    func createNoRecentSearchCell() -> UITableViewCell {
+        var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NoRecent")
+        return cell;
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 54.0
+        return 60.0
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

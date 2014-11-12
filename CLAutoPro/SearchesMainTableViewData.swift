@@ -60,4 +60,25 @@ class SearchesMainTableViewData : TableViewDataBase {
         
         return headerview.view
     }
+    
+    func shouldDisplaySavedSearchesPlaceholder() -> Bool {
+        return savedSearches.count == 0
+    }
+    
+    func shouldDisplayRecentSearchesPlaceholder() -> Bool {
+        return recentSearches.count == 0
+    }
+    
+    func searchDataForIndexPath(indexPath:NSIndexPath) -> Search {
+        if(indexPath.section == 1 && savedSearches.count >= indexPath.row){
+            return savedSearches[indexPath.row]
+        } else if(indexPath.section == 1 && recentSearches.count >= indexPath.row){
+            return recentSearches[indexPath.row]
+        } else {
+            return Search()
+        }
+    }
+    
 }
+
+

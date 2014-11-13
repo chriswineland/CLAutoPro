@@ -17,6 +17,8 @@
 		0FB56EB31A0AD8A6004CC08B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB21A0AD8A6004CC08B /* Search.swift */; };
 		0FB56EB51A0C1487004CC08B /* TextualTableSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */; };
 		0FB56EB71A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */; };
+		0FFA2D601A142CBB0042F8A9 /* CreateSearchTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FFA2D5F1A142CBB0042F8A9 /* CreateSearchTableHeaderView.xib */; };
+		0FFA2D621A142D3F0042F8A9 /* CreateSearchTableHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA2D611A142D3F0042F8A9 /* CreateSearchTableHeaderViewController.swift */; };
 		16D3DF4B1A09D4C700284661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4A1A09D4C700284661 /* AppDelegate.swift */; };
 		16D3DF4E1A09D4C700284661 /* CLAutoPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4C1A09D4C700284661 /* CLAutoPro.xcdatamodeld */; };
 		16D3DF501A09D4C700284661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3DF4F1A09D4C700284661 /* ViewController.swift */; };
@@ -62,6 +64,8 @@
 		0FB56EB21A0AD8A6004CC08B /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextualTableSectionHeaderView.xib; sourceTree = "<group>"; };
 		0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextualTableSectionHeaderViewController.swift; sourceTree = "<group>"; };
+		0FFA2D5F1A142CBB0042F8A9 /* CreateSearchTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateSearchTableHeaderView.xib; sourceTree = "<group>"; };
+		0FFA2D611A142D3F0042F8A9 /* CreateSearchTableHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSearchTableHeaderViewController.swift; sourceTree = "<group>"; };
 		16D3DF451A09D4C700284661 /* CLAutoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLAutoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D3DF491A09D4C700284661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16D3DF4A1A09D4C700284661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB56EB41A0C1487004CC08B /* TextualTableSectionHeaderView.xib */,
+				0FFA2D5F1A142CBB0042F8A9 /* CreateSearchTableHeaderView.xib */,
 			);
 			name = HeaderViews;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB56EB61A0C1538004CC08B /* TextualTableSectionHeaderViewController.swift */,
+				0FFA2D611A142D3F0042F8A9 /* CreateSearchTableHeaderViewController.swift */,
 			);
 			name = HeaderViewControllers;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFA2D601A142CBB0042F8A9 /* CreateSearchTableHeaderView.xib in Resources */,
 				16D3DF9A1A0C72C400284661 /* search@3x.png in Resources */,
 				16D3DF8F1A0C70E400284661 /* alarm@2x.png in Resources */,
 				16D3DF581A09D4C700284661 /* LaunchScreen.xib in Resources */,
@@ -427,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFA2D621A142D3F0042F8A9 /* CreateSearchTableHeaderViewController.swift in Sources */,
 				16D3DF801A09E8C600284661 /* SettingsMainViewController.swift in Sources */,
 				16D3DF501A09D4C700284661 /* ViewController.swift in Sources */,
 				16D3DFA21A0D4F3C00284661 /* TableViewDataBase.swift in Sources */,

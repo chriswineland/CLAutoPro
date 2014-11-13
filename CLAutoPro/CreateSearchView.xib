@@ -28,9 +28,10 @@
             <constraints>
                 <constraint firstItem="mzJ-PR-wFP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GOd-eO-XnB"/>
                 <constraint firstItem="mzJ-PR-wFP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IR8-Ex-1OX"/>
+                <constraint firstAttribute="bottom" secondItem="mzJ-PR-wFP" secondAttribute="bottom" id="atZ-i9-Vtz"/>
                 <constraint firstAttribute="trailing" secondItem="mzJ-PR-wFP" secondAttribute="trailing" id="ctd-Hj-hmz"/>
-                <constraint firstAttribute="bottom" secondItem="mzJ-PR-wFP" secondAttribute="bottom" id="wO5-Yh-hga"/>
             </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
         </view>
     </objects>
 </document>

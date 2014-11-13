@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-
 class SingleSearchTableViewCellController : UITableViewCell {
     
     @IBOutlet var dateMonthLable : UILabel?
@@ -21,6 +20,7 @@ class SingleSearchTableViewCellController : UITableViewCell {
     class func reuseID() -> String{
         return "SingleSearchTableViewCell"
     }
+    
     
     func formatCell(){
         formatDateMonthLable()
